@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name        GitHub Dark UI Preview
+@namespace   xt0rted
+@version     1.0.0
+@homepageURL https://github.com/xt0rted/GitHub-Dark-UI-Preview
+@updateURL   https://raw.githubusercontent.com/xt0rted/GitHub-Dark-UI-Preview/master/github-dark-ui-preview.user.css
+@license     CC-BY-SA-4.0
+@author      Brian Surowiec (https://github.com/xt0rted)
+==/UserStyle== */
+@-moz-document domain("github.com") {
+  .UnderlineNav {
+    box-shadow: inset 0 -1px 0 #343434;
+    background-color: transparent !important;
+  }
+  .menu-item /* The left menu on the settings pages */,
+  .flash .octicon /* Icon in the marketplace alert: https://github.com/actions/checkout */ {
+    color: unset !important;
+  }
+  .flash .btn .octicon {
+    color: #949494 !important;
+  }
+  .menu-item:active,
+  .menu-item:focus {
+    background-color: #222;
+  }
+  .btn,
+  .btn-primary {
+    background-image: none;
+  }
+  .btn,
+  .social-count {
+    box-shadow: 0 1px 0 rgba(200, 200, 200, .04), inset 0 1px 0 hsla(0, 0%, 0%, .25);
+  }
+  .btn-primary {
+    box-shadow: 0 1px 0 rgba(200, 200, 200, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
+  }
+  .form-control,
+  .form-select {
+    /* Not really visible with our colors, probably needs further adjustment */
+    box-shadow: inset 0 1px 0 rgba(64, 64, 64, .2);
+  }
+  .feature-preview-dialog .text-white {
+    color: #fff !important;
+  }
+  /* The branch dropdown on the main repo page */
+  .SelectMenu-header,
+  .SelectMenu-filter {
+    border-bottom-color: #343434;
+  }
+  .SelectMenu-tabs,
+  .SelectMenu-tab {
+    box-shadow: inset 0 -1px 0 #343434;
+  }
+  .Label--gray,
+  .Label--outline {
+    border-color: #343434;
+  }
+  /* Default branch label on the branches page */
+  .Label--gray-darker {
+    color: #cdcdcd;
+    border-color: #949494;
+  }
+}
