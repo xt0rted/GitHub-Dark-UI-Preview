@@ -5,4 +5,4 @@ An extension for [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) wit
 ## Installation
 
 1. You will need a userstyle extension that supports UserCSS such as [Stylus](https://add0n.com/stylus.html) or [Cascadea](https://cascadea.app/).
-2. [Install the UserCSS](github-dark-ui-preview.user.css).
+2. [Install the UserCSS](https://github.com/xt0rted/GitHub-Dark-UI-Preview/raw/master/github-dark-ui-preview.user.css).
