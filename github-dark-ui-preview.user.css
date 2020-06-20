@@ -34,6 +34,11 @@
   .btn-primary {
     box-shadow: 0 1px 0 rgba(200, 200, 200, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
   }
+  .form-control[disabled],
+  .form-select[disabled] {
+    color: #767676 !important;
+    background-color: #242424 !important;
+  }
   .form-control,
   .form-select {
     /* Not really visible with our colors, probably needs further adjustment */
