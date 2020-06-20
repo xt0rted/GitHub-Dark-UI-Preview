@@ -71,3 +71,17 @@
     border-color: #8368aa;
   }
 }
+@-moz-document domain("github.com") {
+  /* HACKS */
+  /* Temporary fix for the profile page header which has a partial background and can't be transparent due to being sticky */
+  .application-main > main > .bg-white::after {
+    content: "";
+    background-color: #181818;
+    position: absolute;
+    top: -24px; /* Need to account for the .mt-4 class */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
