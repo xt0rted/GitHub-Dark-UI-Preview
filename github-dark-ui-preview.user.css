@@ -60,4 +60,9 @@
     color: #cdcdcd;
     border-color: #949494;
   }
+  /* Pro label in user hovercards */
+  .Label--purple {
+    color: #8368aa;
+    border-color: #8368aa;
+  }
 }
