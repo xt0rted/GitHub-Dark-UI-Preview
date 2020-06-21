@@ -70,6 +70,9 @@
     color: #8368aa;
     border-color: #8368aa;
   }
+  .delete-topic-button, .topic-tag, .topic-tag-action {
+    color: #cdcdcd;
+  }
 }
 @-moz-document domain("github.com") {
   /* HACKS */
