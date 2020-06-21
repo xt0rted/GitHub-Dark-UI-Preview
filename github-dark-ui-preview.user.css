@@ -74,7 +74,7 @@
 @-moz-document domain("github.com") {
   /* HACKS */
   /* Temporary fix for the profile page header which has a partial background and can't be transparent due to being sticky */
-  .application-main > main > .bg-white::after {
+  .application-main > main > .bg-white.position-sticky.mt-4::after {
     content: "";
     background-color: #181818;
     position: absolute;
