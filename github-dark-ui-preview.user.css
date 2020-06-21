@@ -38,7 +38,7 @@
     color: #949494;
   }
   .btn-primary .octicon {
-    color: hsla(0,0%,100%,.8);
+    color: hsla(0, 0%, 100%, .8);
   }
   .form-control[disabled],
   .form-select[disabled] {
@@ -92,5 +92,9 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+  }
+  /* Read more button on https://github.com/explore - this is an upstream issue */
+  .btn-outline:hover, [open] > .btn-outline {
+    color: #fff !important;
   }
 }
