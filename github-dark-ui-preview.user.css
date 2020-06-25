@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        GitHub Dark UI Preview
 @namespace   xt0rted
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/xt0rted/GitHub-Dark-UI-Preview
 @updateURL   https://raw.githubusercontent.com/xt0rted/GitHub-Dark-UI-Preview/master/github-dark-ui-preview.user.css
 @license     CC-BY-SA-4.0
@@ -14,7 +14,8 @@
     background-color: #261d08;
     border-bottom: 1px solid #542;
     font-weight: 500;
-    display: flex;
+    display: block;
     padding: 15px;
+    text-align: center;
   }
 }
