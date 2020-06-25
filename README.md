@@ -1,5 +1,7 @@
 # GitHub Dark UI Preview
 
+📢 This style is no longer needed.
+
 An extension for [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) with fixes for the new [UI preview](https://twitter.com/broccolini/status/1273374719249657857).
 
 ## Installation
