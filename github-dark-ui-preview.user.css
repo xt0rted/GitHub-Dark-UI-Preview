@@ -1,100 +1,20 @@
 /* ==UserStyle==
 @name        GitHub Dark UI Preview
 @namespace   xt0rted
-@version     1.0.3
+@version     1.1.0
 @homepageURL https://github.com/xt0rted/GitHub-Dark-UI-Preview
 @updateURL   https://raw.githubusercontent.com/xt0rted/GitHub-Dark-UI-Preview/master/github-dark-ui-preview.user.css
 @license     CC-BY-SA-4.0
 @author      Brian Surowiec (https://github.com/xt0rted)
 ==/UserStyle== */
 @-moz-document domain("github.com") {
-  .UnderlineNav {
-    box-shadow: inset 0 -1px 0 #343434;
-    background-color: transparent !important;
-  }
-  .menu-item /* The left menu on the settings pages */,
-  .flash .octicon /* Icon in the marketplace alert: https://github.com/actions/checkout */ {
-    color: unset !important;
-  }
-  .flash .btn .octicon {
-    color: #949494 !important;
-  }
-  .menu-item:active,
-  .menu-item:focus {
-    background-color: #222;
-  }
-  .btn,
-  .btn-primary {
-    background-image: none;
-  }
-  .btn,
-  .social-count {
-    box-shadow: 0 1px 0 rgba(200, 200, 200, .04), inset 0 1px 0 hsla(0, 0%, 0%, .25);
-  }
-  .btn-primary {
-    box-shadow: 0 1px 0 rgba(200, 200, 200, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
-  }
-  .btn .octicon {
-    color: #949494;
-  }
-  .btn-primary .octicon {
-    color: hsla(0, 0%, 100%, .8);
-  }
-  .form-control[disabled],
-  .form-select[disabled] {
-    color: #767676 !important;
-    background-color: #242424 !important;
-  }
-  .form-control,
-  .form-select {
-    /* Not really visible with our colors, probably needs further adjustment */
-    box-shadow: inset 0 1px 0 rgba(64, 64, 64, .2);
-  }
-  .feature-preview-dialog .text-white {
-    color: #fff !important;
-  }
-  /* The branch dropdown on the main repo page */
-  .SelectMenu-header,
-  .SelectMenu-filter {
-    border-bottom-color: #343434;
-  }
-  .SelectMenu-tabs,
-  .SelectMenu-tab {
-    box-shadow: inset 0 -1px 0 #343434;
-  }
-  .Label--gray,
-  .Label--outline {
-    border-color: #343434;
-  }
-  /* Default branch label on the branches page */
-  .Label--gray-darker {
-    color: #cdcdcd;
-    border-color: #949494;
-  }
-  /* Pro label in user hovercards */
-  .Label--purple {
-    color: #8368aa;
-    border-color: #8368aa;
-  }
-  .delete-topic-button, .topic-tag, .topic-tag-action {
-    color: #cdcdcd;
-  }
-}
-@-moz-document domain("github.com") {
-  /* HACKS */
-  /* Temporary fix for the profile page header which has a partial background and can't be transparent due to being sticky */
-  .application-main > main > .bg-white.position-sticky.mt-4::after {
-    content: "";
-    background-color: #181818;
-    position: absolute;
-    top: -24px; /* Need to account for the .mt-4 class */
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  }
-  /* Read more button on https://github.com/explore - this is an upstream issue */
-  .btn-outline:hover, [open] > .btn-outline {
-    color: #fff !important;
+  body::before {
+    content: "⚠️ You no longer need the GitHub-Dark-UI-Preview style";
+    color: #ddd;
+    background-color: #261d08;
+    border-bottom: 1px solid #542;
+    font-weight: 500;
+    display: flex;
+    padding: 15px;
   }
 }
